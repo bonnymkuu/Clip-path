@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background: #f3e9dc;
+    font-family:arial,san-serif;
+}
+
+.container{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.card{
+    position: relative;
+    height: 200px;
+    width: 150px;
+    background: rgba(0,0,0,0.45);
+    /* background-image: url(''./mtn.jpg') rgba(0,0,0,0.45) no-repeat center center/cover; */
+    clip-path: path("M 10,30 L 60,30 A 10,10 0,0,0 70,20 L 70,10 A 10,10 0,0,1 80,0 L 140,0 A 10,10 0,0,1 150,10 L 150,160 A 10,10 0,0,1 140,170 L 100,170 A 10,10 0,0,0 90,180 L 90,190 A 10,10 0,0,1 80,200 L 10,200 A 10,10 0,0,1 0,190 L 0,40 A 10,10 0,0,1 10,30 Z");
+    overflow: hidden;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0;
+}
+
+.title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 67px;
+    height: 27px;
+    background: #5e3023;
+    clip-path: inset(0.5px round 7px );
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-item: center;
+    justify-content: center;
+    padding: 3px;
+    color: #fff;
+}
+
+.desc{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 57px;
+    height: 27px;
+    background: #502443;
+    clip-path: inset(0.5px round 7px );
+    font-size: 12px;
+    font-weight: italic;
+    display: flex;
+    align-item: center;
+    justify-content: center;
+    padding: 3px;
+    color: #fff;
+}
